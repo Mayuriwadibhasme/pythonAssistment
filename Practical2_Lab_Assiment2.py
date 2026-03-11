@@ -1,22 +1,28 @@
-hardness = float(input("Enter hardness of steel: "))
-carbon = float(input("Enter carbon content of steel: "))
-tensile = float(input("Enter tensile strength of steel: "))
+name = "Mayuri"
 
-cond1 = hardness > 50
-cond2 = carbon < 0.7
-cond3 = tensile > 5600
+emp_id = "E101"
 
-if cond1 and cond2 and cond3:
-    grade = 10
-elif cond1 and cond2:
-    grade = 9
-elif cond2 and cond3:
-    grade = 8
-elif cond1 and cond3:
-    grade = 7
-elif cond1 or cond2 or cond3:
-    grade = 6
-else:
-    grade = 5
+department = "HR"
 
-print("Grade of steel:", grade)
+basic_salary = 30000
+
+da = 0.92 * basic_salary
+
+hra = 0.58 * basic_salary
+
+ta = 0.30 * basic_salary
+
+gross_salary = basic_salary + da + hra + ta
+
+net_salary = gross_salary - 500
+
+print("Name:", name)
+
+print("Employee ID:", emp_id)
+
+print("Department:", department)
+
+print("Basic Salary:", basic_salary)
+
+print("Net Salary:", net_salary)
+
